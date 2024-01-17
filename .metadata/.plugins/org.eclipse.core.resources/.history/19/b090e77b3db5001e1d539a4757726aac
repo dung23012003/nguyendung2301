@@ -1,0 +1,22 @@
+package devmaster.edu.vn.servlet;
+
+import java.sql.*;
+import java.sql.Connection;
+
+public class ConnectionUtils {
+
+	public static Connection getMSSQLConnection() throws SQLException, ClassNotFoundException {
+        String hostName = "localhost";
+        String sqlInstanceName = "SQL2012";
+        String dbName = "LAB02_SERVLET";
+        String userName = "sa";
+        String password = "1234$";
+         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+        String connectionURL = "jdbc:sqlserver://" + hostName + ":1433;instance=" + sqlInstanceName + ";databaseName="
+                + dbName;
+        // Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+         //DriverManager.registerDriver(new com.microsoft.sqlserver.jdbc.SQLServerDriver());  
+        Connection conn = DriverManager.getConnection(connectionURL, userName, password);
+        return conn;
+    }
+}

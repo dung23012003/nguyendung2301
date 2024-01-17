@@ -1,0 +1,10 @@
+package devmaster.edu.vn.servlet;
+
+public class ConnectionUntils {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

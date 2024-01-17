@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: gray;
+}
+.mid{
+    margin:3rem 38% ;
+}
+.tiltle{
+background-color: aliceblue;
+}
+.content{
+    background-color: aliceblue;
+}
+ul{
+    margin: 0;
+    
+}
+li{
+    list-style: none;
+    padding-top:0.5rem ;
+}
+i{
+    width: 20px;
+    height: 20px;
+    padding-left: 1rem;
+}
+ul :hover{
+    background-color: red;
+}
