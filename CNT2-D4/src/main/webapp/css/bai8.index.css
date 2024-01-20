@@ -1,0 +1,54 @@
+
+*{
+	margin:0;
+	padding:0;
+	list-style: none;
+	
+}
+Header,footer,
+section#body content{
+	min-height:380px;
+	border: 1px soild #ccc;	
+}
+Header{
+	display:flex;
+	justify-content:space-between;
+	align-items : center;
+	
+}
+Header .contact a{
+	text-decoration:none;
+	color:#484848;
+}
+Header h2{
+	font-size:1.5rem;
+	
+}
+Nav{
+	background-color:#3578E5;
+	
+}
+Nav ul{
+	margin: 0 10%;
+	display:flex;
+	justify-content: flex-start;
+	align-items:center;
+}
+Footer{
+	margin: 1rem auto;
+	font-weight:bold;
+	
+}Footer .social a img{
+	width:50px;
+	height:50px;
+	border-radius: 50%;
+}
+Footer ul li a{
+	color:#484848;
+	text-decoration:none;
+	padding:.2rem 0;
+	display:block;
+}
+Footer ul li a:hover{
+	color:#3578E5;
+}
